@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container1, .container2{
+    background-color: #4CABA6;
+    margin: 50px;
+    padding: 2em;
+    width: 300px;
+    border: thick double #4C4A59;
+    border-radius: 6px;
+}
+.container1 h2{
+    padding-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container1 form label{
+    color: rgba(255, 255, 255, .75);
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+}
+
+.container1 .form-input{
+    margin: 8px 0 8px 12px;
+    border-color: white;
+    border-style: solid;
+    border-width: 4px;
+}
+.container1 .form-input-check{
+    font-size: 8px;
+    margin: 0 2px;
+}
+.term-service{
+    font-size: small;
+}
+.submit{
+    margin: 16px 0;
+}
+.submit input{
+    cursor: pointer;
+    margin: 0px;
+    width: 100px;
+    height: 20px;
+    border: none;
+    background-color: #F2CDAC;
+    font-size: small;
+    font-weight: 600;
+
+}
