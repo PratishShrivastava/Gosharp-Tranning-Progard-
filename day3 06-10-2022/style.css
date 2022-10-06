@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 4000px;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.navbar ul li{
+    margin: 0 16px;
+    display: inline;
+    cursor: pointer;
+}
+
+.box1, .box2, .box3{
+    width: 100px;
+    height: 300px;
+    top: 100px;
+    border: 2px solid black;
+    background-color: rgb(199, 32, 32);
+}
+.box1{
+    position: fixed;
+    left: 30px;
+    padding: 4px;
+}
+.box2{
+    position: relative;
+    width: 600px;
+    margin-top: 142px;
+    left: 50%;
+    background-color: blue;
+    transform: translate(-50%, -50%);
+}
+.box2 p{
+    padding: 20px;
+    text-align: justify;
+}
+.box2-box1{
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    /* border: 2px solid black; */
+}
+.box2-box1 input{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+}
+.box3{
+    position: fixed;
+    left: 85%;
+    /* background-color: blue; */
+}
+.box3 ul{
+    text-align: center;
+}
+.box3 ul li{
+    background-color: aquamarine;
+    cursor: pointer;
+    margin: 6px 0;
+    list-style: none;
+}
