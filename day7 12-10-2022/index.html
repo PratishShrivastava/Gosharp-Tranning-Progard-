@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Create a webpage containing the following points:
+1. Use of all 6 DOM methods
+2. Create any HTML element using JS and add it to an existing element.
+3. Use of Event Listeners.
+4. Use of setTimeout() and setInterval()
+5. Create a JS function to add rows to an existing table.
+6. Create a JS function that accepts row number, column number (to identify
+a particular cell) and a string to update the content of that cell.
+7. Create a JS function that creates a table based on row, column
+numbers from the user. -->
+
+<header>
+    <nav>
+        <h1>Create a webpage containing:-</h1>
+    </nav>
+</header>
+<main>
+    <section class="dom-methods">
+        <h1>1. Use of all 6 DOM methods</h1>
+        <div>
+            <div class="container1 container" id="container1">getElementById() Method</div>
+            <div class="container2 container">getElementsByClassName() Method</div>
+            <div class="container3 container" name="container3">getElementsByName() Method</div>
+            <div class="container4 container">getElementsByTagName() Method</div>
+            <div class="container5 container">querySelector() Method</div>
+            <div class="container6 container">querySelectorAll() Method</div>
+    </div>
+    <div>
+        <button class="btn1 btn"  onclick="btn1()">getElementById</button>
+        <button class="btn2 btn" onclick="btn2()">getElementsByClassName</button>
+        <button class="btn3 btn" onclick="btn3()">getElementsByName</button>
+        <button class="btn4 btn" onclick="btn4()">getElementsByTagName</button>
+        <button class="btn5 btn" onclick="btn5()">querySelector</button>
+        <button class="btn6 btn" onclick="btn6()">querySelectorAll</button>
+    </div>
+    </section>
+
+    <section class="add-html-ele">
+        <h1>2. Create any HTML element using JS and add it to an existing element.</h1>
+        <div id="ele">
+            <div class="container1 container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa enim ab quisquam, doloribus numquam temporibus. </p></div>
+            <div class="container2 container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa enim ab quisquam, doloribus numquam temporibus. </p></div>
+        </div>
+        <div>
+            <button class="btn1 btn" onclick="addHtmlEle()">Add &lt;p&gt; Tag</button>
+        </div>
+    </section>
+
+    <section class="event-listener">
+        <h1>3. Use of Event Listeners.</h1>
+        <div>
+            <div class="container1 container" id="onmouseover"><p>mouse over</p></div>
+            <div class="container2 container" id="onmouseout"><p>mouseout</p></div>
+            <div class="container3 container" id="dblclick"><p>double click</p></div>
+            <div class="container5 container" id=""><p>dblclick</p></div>
+            <div class="container4 container" id=""><p>dblclick</p></div>
+        </div>
+    </section>
+
+    <section class="settime-setinter">
+        <h1>4. Use of setTimeout()</h1>
+        <div>
+            <p id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quibusdam!</p>
+            <p id="text"></p>
+            <button class="btn1 btn" onclick="myVar = setTimeout(times, 2000)">Start</button>
+            <button class="btn1 btn" style="background-color: red;" onclick="clearTimeout(myVar)">Stop</button>
+        </div>
+        <h1>4. Use of setInterval()</h1>
+        <div>
+            <p id="texts1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quibusdam!</p>
+            <p id="texts"></p>
+            <button class="btn1 btn" onclick="timess()">Start</button>
+            <button class="btn1 btn" style="background-color: red;" onclick="timesss()">Stop</button>
+        </div>
+    </section>
+    <section class="add-rows-exis-tabl">
+        <h1>5. Create a JS function to add rows to an existing table.</h1>
+        <div>
+            <div>
+                <table id="myTable">
+                    <tr>
+                    <td>Row1 cell1</td>
+                    <td>Row1 cell2</td>
+                    </tr>
+                    <tr>
+                    <td>Row2 cell1</td>
+                    <td>Row2 cell2</td>
+                    </tr>
+                    <tr>
+                    <td>Row3 cell1</td>
+                    <td>Row3 cell2</td>
+                    </tr>
+                </table>
+            </div>
+              <br>
+            <button class="btn1 btn" type="button" onclick="createRow()">Create row</button>
+        </div>
+    </section>
+
+    <section class="add-string-row-col">
+        <h1>6. Create a JS function that accepts row number, column number (to identify
+            a particular cell) and a string to update the content of that cell.</h1>
+        <div>
+            <div>
+                <table id="stringTable">
+                    <tr>
+                    <td>Row1 cell1</td>
+                    <td>Row1 cell2</td>
+                    </tr>
+                    <tr>
+                    <td>Row2 cell1</td>
+                    <td>Row2 cell2</td>
+                    </tr>
+                    <tr>
+                    <td>Row3 cell1</td>
+                    <td>Row3 cell2</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <input type="number" placeholder="col" id="tabStr"><br>
+            <input type="number" placeholder="row 0" id="rowStr"><br>
+            <input type="number" placeholder="row 1" id="colStr"><br>
+            <input type="text" placeholder="text1" id="text1Str"><br>
+            <input type="text" placeholder="text2" id="text2Str"><br>
+            <button class="btn1 btn" type="button" onclick="insertString()">Create row</button>
+        </div>
+    </section>
+
+    <section class="add-row-col">
+        <h1>7. Create a JS function that creates a table based on row, column
+            numbers from the user.</h1>
+
+        <div>
+            <table id="row-col-Table"> 
+            </table>
+    
+            <input type="text" placeholder="col" id="text3Str" value="1"><br>
+            <input type="text" placeholder="row" id="text4Str" value="1"><br>
+
+            <input type="button" onclick="createTable()" value="Create the table"> 
+        </div>
+    </section>
+</main>
+<footer>
+    <div>
+        Pratish Shrivastava
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

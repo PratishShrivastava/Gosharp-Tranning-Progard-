@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+header{
+    background-color: brown;
+    text-align: center;
+    color: antiquewhite;
+    font-style: 20px;
+    padding: 18px;
+    text-transform: capitalize;
+}
+main .dom-methods, .event-listener, .add-rows-exis-tabl, .add-row-col{
+    background-color: azure;
+    padding: 10px 0px;
+    text-align: center;
+}
+main .dom-methods h1, .event-listener h1, .add-rows-exis-tabl h1, .add-row-col h1{
+    margin: 30px 4px;
+}
+main .dom-methods div {
+    margin: 20px 0px;
+}
+.dom-methods .container{
+    display: inline;
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+}
+.dom-methods .btn{
+    margin: 10px 40px;
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.dom-methods .btn:hover{
+    padding: 8px;
+}
+main .add-html-ele, .settime-setinter, .add-string-row-col {
+    padding: 10px;
+    text-align: center;
+}
+main .add-html-ele h1, .settime-setinter h1, .add-string-row-col h1{
+    margin: 30px 4px;
+}
+main .add-html-ele .container, #text, #text1{
+    padding: 10px;
+}
+main .add-html-ele .btn{
+    margin: 10px 40px;
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+main .event-listener .container{
+    display: inline-block;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 40px 20px;
+}
+
+/* .settime-setinter{
+
+} */
+main .settime-setinter .btn, .add-rows-exis-tabl .btn{
+    margin: 10px 40px;
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.add-rows-exis-tabl div, .add-row-col div, .add-string-row-col div{
+    text-align: -webkit-center;
+}
+
+.add-rows-exis-tabl div div #myTable, td, .add-string-row-col div div #myTable, td{
+    border: 2px solid black;
+}
+
+footer{
+    background-color: brown;
+    text-align: center;
+    color: antiquewhite;
+    font-style: 20px;
+    padding: 12px;
+    text-transform: capitalize;
+}
